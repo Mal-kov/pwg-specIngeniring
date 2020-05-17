@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+	font-size: 16px;
+	color: $black;
+}
+
+body {
+	font-family: 'Monteserrat', sans-serif;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+a.sI-btn{
+	font-size: 36px;
+	color: $white;
+	padding: 15px 20px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	background: $gradient;
+	
+	&:hover{
+		background: $gradientRev;
+		border-color: $grin;
+		color: $white;
+	}
+
+
+
+
+
+}
+
+// Заголовок каждой секции с полоской внизу
+.devider{
+	display: block;
+	position: relative;
+	margin: 60px auto;
+	
+
+	.section-title{
+		text-align: center;
+		color: $black;
+		font-size: 42px;
+		font-weight: bold;
+		letter-spacing: 1px;
+
+		&::after{
+			content: "";
+			height: 3px;
+			width: 200px;
+			background: linear-gradient(#0BF895 27.23%, #076A41 77.52%);
+			display: block;
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+@media (max-width: 1025px){
+	a.sI-btn{
+		font-size: 26px;
+	}
+
+}
+
+@media (max-width: 576px){
+	a.sI-btn{
+		font-size: 20px;
+		padding: 15px 20px;
+		width: 100%;
+	}
+}
+
+
+

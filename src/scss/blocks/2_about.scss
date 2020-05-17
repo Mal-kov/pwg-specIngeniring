@@ -1,0 +1,43 @@
+.about{
+
+
+    .aboutCompany{
+        margin-top: 50px;
+        position: relative;
+        background-color: $grey;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px 3px rgba(0, 0, 0, .4);
+
+        .aboutCompany_top-quotes{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+
+        }
+
+        .aboutCompany_text{
+            padding: 45px 70px;
+            font-size: 22px;
+            font-style: italic;
+            line-height: 30px;
+
+        }
+
+        .aboutCompany_bottom-quotes{
+            position: absolute;
+            bottom: 50px;
+            right: 10px;
+
+        }
+
+        .aboutCompany_logo{
+            position: absolute;
+
+        }
+
+        .aboutCompany_signature{
+            position: absolute;
+
+        }
+    }
+}

@@ -1,11 +1,22 @@
 const path = require('path')
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
+const htmlPlugin = (extra) => {
+    const htmlFile = 
+        new HtmlWebpackPlugin( {
+            filename: extra + '.html',
+            template: './src/' + extra + '.html',
+            chunks: [extra]
+        })
+    
+    return htmlFile
+}
 
 module.exports = {
 
@@ -16,7 +27,7 @@ module.exports = {
     },
     optimization: {
         minimizer: [
-            // new OptimizeCSSAssetsPlugin({}),
+            new OptimizeCssAssetsPlugin({}),
             new UglifyJsPlugin()
         ]
     },
@@ -30,16 +41,17 @@ module.exports = {
             template: './src/index.html',
             chunks: ['main']
         }),
-        new HtmlWebpackPlugin({
-            filename: 'product_list.html',
-            template: 'src/product_list.html',
-            chunks: ['product_list']
-          }),
-        new HtmlWebpackPlugin({
-            filename: 'product_single.html',
-            template: 'src/product_single.html',
-            chunks: ['product_single']
-        }),
+
+        // htmlPlugin('index'),
+        htmlPlugin('skud'),
+        htmlPlugin('ops'),
+        htmlPlugin('tv'),
+        htmlPlugin('gsm'),
+        // new HtmlWebpackPlugin( {
+        //     filename: 'gsm.html',
+        //     template: './src/gsm.html',
+        //     chunks: ['gsm']
+        // }),
         new MiniCssExtractPlugin({
             filename: 'css/style.css'
         }),
