@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+
+  <button class="scrollToTop">
+    <div class="scrollTopArrow">
+        <i class="fas fa-angle-up"></i>
+    </div>
+  </button>
     
 <header style="background: url(images/1sec_bg.jpg);">
     <div class="menu-top">
@@ -16,24 +22,25 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
+              <ul id="mainMenu" class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">О компании </a>
+                  <a class="nav-link" href="#about"about>О компании </a>
                 </li>
                 <li class="nav-item active dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Видеонаблюдение<span class="sr-only">(current)</span>
+                    Услуги
+                    <span class="sr-only">(current)</span>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Видеонаблюдение</a>
-                    <a class="dropdown-item" href="#">Сигнализация</a>
-                    <a class="dropdown-item" href="#">Контроль доступа</a>
-                    <a class="dropdown-item" href="#">Телевидение</a>
-                    <a class="dropdown-item" href="#">GSM оборудование</a>
+                    <a class="dropdown-item" href="#videoBlock">Видеонаблюдение</a>
+                    <a class="dropdown-item" href="#alarmSystem">Сигнализация</a>
+                    <a class="dropdown-item" href="#skud">Контроль доступа</a>
+                    <a class="dropdown-item" href="#tvBlock">Телевидение</a>
+                    <a class="dropdown-item" href="#gsmBlock">GSM оборудование</a>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Контакты</a>
+                  <a class="nav-link" href="#contact">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -56,7 +63,7 @@
                 <div class="carousel-caption">
                   <h1>Установка систем <span>видеонаблюдения</span> под ключ</h1>
                   <p>Мониторинг - основа безопасности</p>
-                  <a href="#" class="btn sI-btn">Узнать стоимость</a>
+                  <a href="#order" class="btn sI-btn">Узнать стоимость</a>
                 </div>
               </div>
               <div class="carousel-item">
@@ -67,7 +74,7 @@
                 <div class="carousel-caption">
                   <h1>Монтаж систем <span>охранно-пожарной</span> сигнализации</h1>
                   <p>Вывод на пульт охраны</p>
-                  <a href="#" class="btn sI-btn">Узнать стоимость</a>
+                  <a href="#order" class="btn sI-btn">Узнать стоимость</a>
                 </div>
               </div>
               <div class="carousel-item">
@@ -78,7 +85,7 @@
                 <div class="carousel-caption">
                   <h1>Монтаж систем <span>контроля доступа</span>  видеодомофонов</h1>
                   <p>IP - домофоны и карты доступа</p>
-                  <a href="#" class="btn sI-btn">Узнать стоимость</a>
+                  <a href="#order" class="btn sI-btn">Узнать стоимость</a>
                 </div>
               </div>
               <div class="carousel-item">
@@ -89,31 +96,26 @@
                 <div class="carousel-caption">
                   <h1>Установка <span>DVB T2 / спутникового</span> телевидения</h1>
                   <p>Триколор ТВ / НТВ+ / Интернет</p>
-                  <a href="#" class="btn sI-btn">Узнать стоимость</a>
+                  <a href="#order" class="btn sI-btn">Узнать стоимость</a>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="carousel-item_img">
-                  <img src="images/1_sec-slider_4.png" class="d-block" alt="...">
+                  <img src="images/1_sec-slider_5.png" class="d-block" alt="...">
                 </div>
                 
                 <div class="carousel-caption">
                   <h1>Установка систем <span>усиления сотового</span> сигнала</h1>
                   <p>Любые операторы сотовых сетей</p>
-                  <a href="#" class="btn sI-btn">Узнать стоимость</a>
+                  <a href="#order" class="btn sI-btn">Узнать стоимость</a>
                 </div>
               </div>
             </div>
-           
           </div>
-
-
     </div>
-
-
 </header>
 
-<section class="about">
+<section id="about" class="about">
   <div class="devider">
     <p class="section-title">О нашей компании</p>
   </div>
@@ -132,17 +134,11 @@
             <div class="aboutLittleRombs_item rombItem3">
               <img src="images/2_sec-1romb.jpg" alt="">
             </div>
-            
             <div class="aboutBigRomb rombItem4">
               <img src="images/2_sec-big_romb.jpg" alt="">
-  
             </div>
-
           </div>
-          
-
         </div>
-
       </div>
       <div class="col-md-6">
         <div class="aboutCompany">
@@ -151,35 +147,823 @@
           </div>
           <div class="aboutCompany_text">
             <p>Наша компания была основана в 2010году . Первоначальная ориентация деятельности была на монтаж охранно-пожарной сигнализации и систем видеонаблюдения, но со временем мы увидили необходимость в оказании дополнительных услуг.  Наши сотрудники имеют опыт работы во вневедомственной охране. Мы всегда смотрим на объект с позиции максимальной безопасности.</p>
+            <p class="aboutCompany_license">Лицензия МЧС №33-Б00108 от 12.08.2010 г</p>
           </div>
-
           <div class="aboutCompany_bottom-quotes">
             <img src="images/2_sec-skoba_down.png" alt="">
           </div>
-
           <div class="aboutCompany_logo">
             <img src="images/1_sec-headerLogo.png" alt="">
           </div>
           <div class="aboutCompany_signature">
             <p>С уважением, Олег Маслов</p>
           </div>
-
-
-
-
-
         </div>
-
       </div>
     </div>
-
   </div>
-</section>
+</section><!-- / about-->
 
+<section id="solution" class="solution">
 
+  <div class="devider">
+    <p class="section-title">У нас есть решение для любого объекта</p>
+  </div>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="solutionLittleRombs">
+          <div class="solutionLittleRombs_item rombItem1">
+            <img src="images/2_sec-1romb2.jpg" alt="">
+          </div>
+          <div class="solutionLittleRombs_item rombItem2">
+            <!-- <img src="images/2_sec-1romb.jpg" alt=""> -->
+          </div>
+          <div class="solutionLittleRombs_item rombItem3">
+            <img src="images/2_sec-1romb4.jpg" alt="">
+          </div>
+          <div class="solutionLittleRombs_item rombItem4">
+            <img src="images/2_sec-1romb3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="solutionList">
+          <h4>Частная собственность</h4>
+          <ul>
+            <li><p>Дом / Квартира</p></li>
+            <li><p>Дача / Гараж</p></li>
+            <li><p>Стройка</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 order-md-last">
+        <div class="solutionLittleRombs ">
+          <div class="solutionLittleRombs_item rombItem1">
+            <img src="images/2_sec-1romb5.jpg" alt="">
+          </div>
+          <div class="solutionLittleRombs_item rombItem2">
+            <img src="images/2_sec-1romb6.jpg" alt="">
+          </div>
+          <div class="solutionLittleRombs_item rombItem3">
+            <!-- <img src="images/2_sec-1romb.jpg" alt=""> -->
+          </div>
+          <div class="solutionLittleRombs_item rombItem4">
+            <img src="images/2_sec-1romb7.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="solutionList">
+          <h4>Объекты бизнеса</h4>
+          <ul>
+            <li><p>Офисные и торговые точки</p></li>
+            <li><p>Складские помещения</p></li>
+            <li><p>Стоянки и КПП</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> <!-- / solution-->
 
-<footer></footer>
+<section id="getFromUs" class="getFromUs">
+
+  <div class="devider">
+    <p class="section-title">Что Вы получаете у нас</p>
+  </div>
+  <div class="container getFromUs-block">
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="getFromUs_slider-1">
+          <div id="getFromUs_slider-1" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="images/2-sec_getFromUs_slider-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/2-sec_getFromUs_slider-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/2-sec_getFromUs_slider-3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/2-sec_getFromUs_slider-4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/2-sec_getFromUs_slider-5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/2-sec_getFromUs_slider-6.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="getFromUs_desc">
+          <h4>Расчет оборудования</h4>
+          <p>Мы предлагаем всем клиентам только проверенное оборудование, но готовы искать альтернативное решение если стоимость выходит за рамки бюджета. На итоговую стоимость оборудования влияет очень много факторов. Давайте обсудим все возможные варианты.  </p>
+        </div>
+      </div>
+    </div> <!--/ 1 row-->
+    <div class="row">
+      <div class="col-lg-6 ">
+        <div id="getFromUs_slider-2" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/4-sec_slider2-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/4-sec_slider2-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/4-sec_slider2-3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/4-sec_slider2-4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/4-sec_slider2-5.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-first">
+        <div class="getFromUs_desc">
+          <h4>Монтажные работы</h4>
+          <p>Стоимость монтажных работ зависит от поставленных задач и сложности их реализации.  К каждому объекту -  индивидуальный подход. Наши монтажники имеют многолетний опыт работы, который позволяет выполнять работы любого уровня сложности. </p>
+        </div>
+      </div>
+    </div><!--/ 2 row-->
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="getFromUs_slider-1">
+          <div id="getFromUs_slider-1" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="images/4-sec_slider3-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/4-sec_slider3-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/4-sec_slider3-3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="getFromUs_desc">
+          <h4>Обучение</h4>
+          <p>Мы научим вас и ваших сотрудников пользоваться системой </p>
+        </div>
+      </div>
+    </div><!--/ 3 row-->
+    <div class="row">
+      <div class="col-lg-6 ">
+        <div id="getFromUs_slider-4" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/4-sec_slider4-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/4-sec_slider4-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/4-sec_slider4-3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-first">
+        <div class="getFromUs_desc">
+          <h4>Гарантии</h4>
+          <p>На наши работы мы даем гарантию 1 год. И предлагаем заключить договор на обслуживание с оперативным реагированием для устранения неисправностей </p>
+          </div>
+      </div>
+    </div><!--/ 4 row-->
+  </div>
+</section><!-- / getFromUs -->
+
+<section id="videoBlock" class="videoBlock">
+
+  <div class="devider">
+    <p class="section-title">Какие задачи решает видеонаблюдение</p>
+  </div>
+
+  <div class="sectionBgTriangle"></div>  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Урегулирование спорных моментов</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/5_sec-bg1.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Бывает не понятно виноват ли работник или не прав клиент. Можно выяснить в записи.</p>
+          </div>
+        </div>
+      </div><!--/ 1 md-3-->
+      <div class="col-lg-3 col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Дисциплина работников</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/5_sec-bg2.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>На 30 % возрастает продуктивность работы сотрудников, когда они знают о камерах</p>
+          </div>
+        </div>
+      </div><!--/ 2 md-3-->
+      <div class="col-lg-3 col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Предотвращение краж</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/5_sec-bg3.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Вероятность проникновения или саботажа - резко снижается. </p>
+          </div>
+        </div>
+      </div><!--/ 3 md-3-->
+      <div class="col-lg-3 col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Экономия времени для руководства</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/5_sec-bg4.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Удаленный доступ для контроля всех объектов из любой точки мира где есть интернет.</p>
+          </div>
+        </div>
+      </div><!--/ 4 md-3-->
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="serviceBlock_desc">
+          <div class="serviceBlock_desc-img">
+            <div class="serviceBlock_desc-imgTop">
+                <img src="images/5_sec-img3.jpg" alt="">
+            </div>
+            <div class="serviceBlock_desc-imgBottom">
+              <img src="images/5_sec-img4.jpg" alt="">
+            </div>
+          </div>
+          <div class="serviceBlock_desc-text">
+            <h4>Монтаж и обслуживание систем видеонаблюдения.</h4>
+            <ul>
+              <li><p>Монтаж аналоговых и цифровых камер.</p></li>
+              <li><p>Установка регистраторов / серверов. Настройка клиентского оборудования.</p></li>
+              <li><p>Мониторинг торговых залов и кассовых зон.</p></li>
+              <li><p>Складские и производственные площади. Охрана периметра.</p></li>
+            </ul>
+          </div>
+          <a href="#" class="sI-btnSmall">Узнать стоимость</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> <!-- / videoBlock -->
+
+<section id="alarmSystem" class="alarmSystem">
+
+  <div class="devider">
+    <p class="section-title">Охранно - пожарная сигнализация</p>
+  </div>
+
+  <div class="sectionBgTriangle"></div>  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Обнаружение возгорания</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/5_sec-bg1.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Обнаружение возгорания на раннем этапе, когда очаг возгарания можно легко локализовать простыми средствами пожаротушения</p>
+          </div>
+        </div>
+      </div><!--/ 1 md-3-->
+      <div class="col-lg-3 col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Дисциплина работников</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/5_sec-bg2.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Ежедневные постановка и снятие объекта с охраны, а также проверка тревожной кнопки - дисциплинируют работников</p>
+          </div>
+        </div>
+      </div><!--/ 2 md-3-->
+      <div class="col-lg-3 col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Предотвращение краж</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/5_sec-bg3.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Вероятность проникновения или саботажа - резко снижается. </p>
+          </div>
+        </div>
+      </div><!--/ 3 md-3-->
+      <div class="col-lg-3 col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Экономия времени для руководства</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/5_sec-bg4.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Вы всегда в курсе о любых срабатываниях средств охраны.</p>
+          </div>
+        </div>
+      </div><!--/ 4 md-3-->
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="serviceBlock_desc">
+          <div class="serviceBlock_desc-img">
+            <div class="serviceBlock_desc-imgTop">
+                <img src="images/6_sec-img3.jpg" alt="">
+            </div>
+            <div class="serviceBlock_desc-imgBottom">
+              <img src="images/6_sec-img4.jpg" alt="">
+            </div>
+          </div>
+          <div class="serviceBlock_desc-text">
+            <h4>Монтаж и обслуживание систем ОПС.</h4>
+            <ul>
+              <li><p>Монтаж охранно - пожарной сигнализации.</p></li>
+              <li><p>Вывод на пульт охраны или автономный режим работы.</p></li>
+              <li><p>Кнпки тревожной сигнализации в кассовых узлах.</p></li>
+              <li><p>Монтаж беспроводными датчиками, если требует интерьер.</p></li>
+            </ul>
+          </div>
+          <a href="#" class="sI-btnSmall">Узнать стоимость</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- / alarmSystem -->
+
+<section id="skud" class="skud">
+
+  <div class="devider">
+    <p class="section-title">Контроль и управление доступом</p>
+  </div>
+
+  <div class="sectionBgTriangle"></div>  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Ограничение доступа</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/6_sec-lock 1.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Можно легко ограничить доступ от посторонних лиц.</p>
+          </div>
+        </div>
+      </div><!--/ 1 md-3-->
+      <div class="col-lg-3 col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Дисциплина работников</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/5_sec-bg2.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Всегда можно провести время прихода и время ухода работников. (Требуется программное обеспечение)</p>
+          </div>
+        </div>
+      </div><!--/ 2 md-3-->
+      <div class="col-lg-3 col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Решение для частного дома</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/6_sec-home.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Хорошее решение для частного дома или дачи. В совокупности с видеодомофоном</p>
+          </div>
+        </div>
+      </div><!--/ 3 md-3-->
+      <div class="col-lg-3 col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Универсальность и гибкость системы</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/5_sec-bg4.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Возможны более сложные варианты реализации системы: Табур из двух дверей. Скрытая реакция на запретные ключи и т.д..</p>
+          </div>
+        </div>
+      </div><!--/ 4 md-3-->
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="serviceBlock_desc">
+          <div class="serviceBlock_desc-img">
+            <div class="serviceBlock_desc-imgTop">
+                <img src="images/7_sec-img3.jpg" alt="">
+            </div>
+            <div class="serviceBlock_desc-imgBottom">
+              <img src="images/7_sec-img4.jpg" alt="">
+            </div>
+          </div>
+          <div class="serviceBlock_desc-text">
+            <h4>Монтаж и обслуживание систем контроля и управления доступом.</h4>
+            <ul>
+              <li><p>Монтаж электро-механических и магнитных замков.</p></li>
+              <li><p>Установка и настройка програмной части системы.</p></li>
+              <li><p>Цифровое и аналоговое оборудование</p></li>
+              <li><p>Видеодомофоны</p></li>
+            </ul>
+          </div>
+          <a href="#" class="sI-btnSmall">Узнать стоимость</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- / skud -->
+
+<section id="tvBlock" class="tvBlock">
+
+  <div class="devider">
+    <p class="section-title">Спутниковое и эфирное ТВ</p>
+  </div>
+
+  <div class="sectionBgTriangle"></div>  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Спутниковое телевидение</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/8_sec-img1.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Установка и настройка спутниковой антенны. Подключение и активация выбранных пакетов. ТриколорТВ НТВ+ МТС и др. </p>
+          </div>
+        </div>
+      </div><!--/ 1 md-3-->
+      <div class="col-lg-4 col-md-4">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Цифровое DVB T2 телевидение</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/8_sec-img2.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Установка и настройка комплекта для цифрового эфирного телевидения формата DVB T2.   </p>
+          </div>
+        </div>
+      </div><!--/ 2 md-3-->
+      <div class="col-lg-4 col-md-4">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Спутниковый интернет</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/8_sec-img3.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Подбор тарифных планов и оборудования. Монтаж и настройка. </p>
+          </div>
+        </div>
+      </div><!--/ 3 md-3-->
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="serviceBlock_desc">
+          <div class="serviceBlock_desc-img">
+            <div class="serviceBlock_desc-imgTop">
+                <img src="images/8_sec-img4.jpg" alt="">
+            </div>
+            <div class="serviceBlock_desc-imgBottom">
+              <img src="images/8_sec-img5.jpg" alt="">
+            </div>
+          </div>
+          <div class="serviceBlock_desc-text">
+            <h4>Монтаж и обслуживание систем телевидения.</h4>
+            <ul>
+              <li><p>Монтаж спутникового и эфирного оборудования.</p></li>
+              <li><p>Обслуживание и обновление ресиверов.</p></li>
+              <li><p>Обновление и продление пакетов абонентов.</p></li>
+            </ul>
+          </div>
+          <a href="#" class="sI-btnSmall">Узнать стоимость</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section><!-- / tvBlock -->
+
+<section id="gsmBlock" class="gsmBlock">
+
+  <div class="devider">
+    <p class="section-title">GSM оборудование</p>
+  </div>
+
+  <div class="sectionBgTriangle"></div>  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Система усиления GSM сигналов</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/9_sec-img1.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p> Если у Вас в доме плохой сигнал сотового оператора, а на улице сигнал устойчив, то Вам поможен усилитель или репитер </p>
+          </div>
+        </div>
+      </div><!--/ 1 md-3-->
+      <div class="col-md-6">
+        <div class="taskElement">
+          <div class="taskElement_title">
+            <p>Нет привязки к оператору связи</p>
+          </div>
+          <div class="taskElement_devider"></div>
+          <div class="taskElement_bg">
+            <img src="images/9_sec-img2.png" alt="">
+          </div>
+          <div class="taskElement_text">
+            <p>Усиливается сигнал стандарта GSM, на котором работают большинство операторов связи. </p>
+          </div>
+        </div>
+      </div><!--/ 3 md-3-->
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="serviceBlock_desc">
+          <div class="serviceBlock_desc-img">
+            <div class="serviceBlock_desc-imgTop">
+                <img src="images/9_sec-img3.jpg" alt="">
+            </div>
+            <div class="serviceBlock_desc-imgBottom">
+              <img src="images/9_sec-img4.jpg" alt="">
+            </div>
+          </div>
+          <div class="serviceBlock_desc-text">
+            <h4>Монтаж и обслуживание систем GSM усиления.</h4>
+            <ul>
+              <li><p>Усиление сигнала - вне зависимости от оператора связи.</p></li>
+              <li><p>Монтаж, настройка и обслуживание систем.</p></li>
+            </ul>
+          </div>
+          <a href="#" class="sI-btnSmall">Узнать стоимость</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- / gsmBlock -->
+
+<section id="contact" class="contact">
+
+  <div class="devider">
+    <p class="section-title">Контактная информация</p>
+  </div>
+
+  <div class="contactUs">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-6">
+          <div class="map">
+            <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac3bc47f5ba3d8126a58d578787cca2ab461ba335e53e0f98453c595c8ace7f07&amp;source=constructor" width="881" height="648" frameborder="0"></iframe> -->
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac3bc47f5ba3d8126a58d578787cca2ab461ba335e53e0f98453c595c8ace7f07&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="contactInfo">
+            <div class="contactInfo_address">
+                <div class="contactInfo_img">
+                  <img src="images/10_sec-address.png" alt="">
+                </div>
+                <p>Покров <br>Больничный проезд<br>дом 18</p>
+            </div>
+            <div class="contactInfo_phone">
+              <div class="contactInfo_img">
+                <img src="images/10_sec-phone.png" alt="">
+              </div>
+              <p>8-920-904-22-11</p>
+            </div> <!-- / contactInfo_phone -->
+            <div class="contactInfo_email">
+              <div class="contactInfo_img">
+                <img src="images/10_sec-email.png" alt="">  
+              </div>
+              <p>info@spec-ingeniring.ru</p>
+            </div> <!-- / contactInfo_email -->
+            <p class="contactInfo_timeWork">Часы работы:</p>
+            <div class="contactInfo_work">
+              <div class="contactInfo_workDay">
+                <div class="contactInfo_day">
+                  <p class="contactInfo_workDayGreen">ПН</p>
+                </div>
+                <div class="contactInfo_day">
+                  <p class="contactInfo_workDayGreen">ВТ</p>
+                </div>
+                <div class="contactInfo_day">
+                  <p class="contactInfo_workDayGreen">СР</p>
+                </div>
+                <div class="contactInfo_day">
+                  <p class="contactInfo_workDayGreen">ЧТ</p>
+                </div>
+                <div class="contactInfo_day">
+                  <p class="contactInfo_workDayGreen">ПТ</p>
+                </div>  
+              </div>
+              <div class="contactInfo_workTime">
+                <p class="contactInfo_workTimeGreen">10 - 19</p>
+              </div>
+            </div><!-- / contactInfo_work -->
+            <div class="contactInfo_work">
+              <div class="contactInfo_workDay">
+                <div class="contactInfo_day">
+                  <p class="contactInfo_workDayRed">СБ</p>
+                </div>
+                <div class="contactInfo_day">
+                  <p class="contactInfo_workDayRed">ВС</p>
+                </div>
+              </div>
+              <div class="contactInfo_workTime">
+                <p class="contactInfo_workTimeRed">Вых.</p>
+              </div>
+            </div><!-- / contactInfo_work -->
+          </div> <!-- / contactInfo -->
+        </div>
+      </div>
+    </div>
+  </div><!-- / contactUs -->
+</section><!-- / contact -->
+
+<section id="order" class="order">
+
+  <div class="devider">
+    <p class="section-title">Заявка на расчет</p>
+  </div>
+
+  <div class="calc">
+    <img src="images/11_sec-calc2.png" alt="">
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="order_title">Предлагаем Вам сделать бесплатный предварительный расчет по Вашим данным</div>
+    </div>
+      <div class="form">
+        <form action="">
+          <div class="form-row ">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="orderForm_name">Как к Вам обращаться</label>
+                <input type="text" class="form-control" id="orderForm_name" placeholder="Иван Васильевич">
+              </div>
+              <div class="form-group">
+                <label for="orderForm_email">Адрес электронной почты</label>
+                <input type="email" class="form-control" id="orderForm_email" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="orderForm_services">Выбор услуги</label>
+                <select class="form-control" id="orderForm_services">
+                  <option>Видеонаблюдение</option>
+                  <option>Сигнализация</option>
+                  <option>Контроль доступа</option>
+                  <option>Телевидение</option>
+                  <option>GSM оборудование</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="orderForm_file">Прикрепите схему объекта</label>
+                <input type="file" class="form-control-file" id="orderForm_file">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="orderForm_desc">Опишите техническое задание</label>
+                <textarea class="form-control" id="orderForm_desc" rows="9" placeholder="Хочу оборудовать магазин охранно-пожарной сигнализацие (56 кв.м.) Схему приложил"></textarea>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="orderForm_check" checked>
+                <label class="form-check-label" for="orderForm_check" >Я согласен с условиями обработки <a href="#">персональных данных</a></label>
+              </div>
+              <button type="submit" class="btn sI-btnSmall mb-2">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</section><!-- / order -->
+
+<footer>
+  <div class="container">
+    <div class="row footerInfo">
+      <!-- <div class=""> -->
+        <div class="col-md-4">
+          <div class="footerInfo_logo">
+            <img src="images/1_sec-headerLogo.png" alt="">
+            <p>СпецИнжениринг</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footerInfo_services">
+            <ul>
+              <li><a href="#">Видеонаблюдение</a></li>
+              <li><a href="#">Сигнализация</a></li>
+              <li><a href="#">Контроль доступа</a></li>
+              <li><a href="#">Спутниковое ТВ</a></li>
+              <li><a href="#">GSM оборудование</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footerInfo_contact">
+            <div class="footerInfo_element">
+              <img src="images/footer-location.png" alt="">
+              <p>Покров <br>Больничный пр. 18</p>
+            </div>
+            <div class="footerInfo_element">
+              <img src="images/footer-telephone.png" alt="">
+              <a href="tel:89209042211">8-920-904-22-11</a>
+            </div>
+            <div class="footerInfo_element">
+              <img src="images/footer-email.png" alt="">
+              <a href="mailto:info@spec-ingeniring.ru">info@spec-ingeniring.ru</a>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="footerCopy">
+          <p>&copy;2010-2020 ООО СпецИнжениринг</p>
+          <a href="#">Политика конфидециальности</a>
+          <p>Лицензия МЧС №33-Б00108 от 12.08.2010 г</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

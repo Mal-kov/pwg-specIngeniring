@@ -1,0 +1,29 @@
+/**
+* Custom styles 
+*/
+@charset "UTF-8";
+@import "~bootstrap/scss/bootstrap";
+// $owl-image-path: "~owl.carousel/src/img/";
+// @import '~owl.carousel/src/scss/owl.carousel';
+// @import '~owl.carousel/src/scss/owl.theme.default';
+
+@import "./scss/normalize";
+@import "./scss/variables.scss";
+@import "./scss/fonts.scss";
+@import "./scss/core.scss";
+
+@import "./scss/blocks/scrollToTop.scss";
+@import "./scss/blocks/1_header.scss";
+@import "./scss/blocks/2_about.scss";
+@import "./scss/blocks/3_solution.scss";
+@import "./scss/blocks/4_getFromUs.scss";
+@import "./scss/blocks/5_videoblock.scss";
+@import "./scss/blocks/6_alarmSystem.scss";
+@import "./scss/blocks/7_skud.scss";
+@import "./scss/blocks/8_tvBlock.scss";
+@import "./scss/blocks/9_gsmBlock.scss";
+@import "./scss/blocks/10_contact.scss";
+@import "./scss/blocks/11_order.scss";
+@import "./scss/blocks/12_footer.scss";
+
+

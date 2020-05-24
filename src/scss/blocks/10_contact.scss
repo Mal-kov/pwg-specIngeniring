@@ -1,0 +1,168 @@
+.contact{
+    .contactUs{
+        .map{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 1px solid $green;
+        }
+        .contactInfo{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: $grey;
+            padding: 20px 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 3px rgba(0, 0, 0, .4);
+            .contactInfo_img{
+                padding: 10px;
+                width: 80px;
+                img{
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .contactInfo_address{
+                display: flex;
+                font-size: 22px;
+                font-weight: 600;
+                p{
+                    vertical-align: middle;
+                }
+            }
+            .contactInfo_phone{
+                display: flex;
+                font-size: 24px;
+                font-weight: 600;
+                p{
+                    padding-top: 20px;
+                }
+            }
+            .contactInfo_email{
+                display: flex;
+                font-size: 20px;
+                font-weight: 600;
+                p{
+                    padding-top: 20px;
+                }
+            }
+            .contactInfo_timeWork{
+                font-size: 26px;
+                text-align: center;
+                margin-bottom: 0;
+            }
+            .contactInfo_work{
+                display: flex;
+                .contactInfo_day{
+                    color: $white;
+                    width: 70px;
+                    height: 30px;
+                    border: 2px solid $red;
+                    margin: 10px;
+                    p{
+                        text-align: center;
+                        vertical-align: middle;
+                        height: 100%;
+                    }
+                    .contactInfo_workDayGreen{
+                        background-color: $green;
+                    }
+                    .contactInfo_workDayRed{
+                        background-color: $red;
+                    }
+                }
+                .contactInfo_workTime{
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    p{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 38px;
+                        font-weight: bold;
+                    }
+                    .contactInfo_workTimeGreen{
+                        color: $green;
+                    }
+                    .contactInfo_workTimeRed{
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1025px){
+    .contact{
+        .contactUs{
+            .contactInfo{
+                .contactInfo_address{
+                    font-size: 18px;
+                }
+                .contactInfo_phone{
+                    font-size: 18px;
+                }
+                .contactInfo_email{
+                    font-size: 16px;
+                }
+                .contactInfo_work{
+                    .contactInfo_workTime{
+                        p{
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:601px){
+    .contact{
+        .contactUs{
+            .map{
+                height: 300px;
+                margin-bottom: 20px;
+            }
+            .contactInfo{
+                width: 320px;
+                margin: 0 auto;
+                .contactInfo_address{
+                    font-size: 18px;
+                }
+                .contactInfo_phone{
+                    font-size: 18px;
+                }
+                .contactInfo_email{
+                    font-size: 16px;
+                }
+                .contactInfo_work{
+                    .contactInfo_workTime{
+                        p{
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:330px){
+    .contact{
+        .contactUs{
+            .contactInfo{
+                width: 280px;
+                .contactInfo_address{
+                    font-size: 16px;
+                }
+                .contactInfo_phone{
+                    font-size: 16px;
+                }
+                .contactInfo_email{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

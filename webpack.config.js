@@ -7,16 +7,16 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
-const htmlPlugin = (extra) => {
-    const htmlFile = 
-        new HtmlWebpackPlugin( {
-            filename: extra + '.html',
-            template: './src/' + extra + '.html',
-            chunks: [extra]
-        })
+// const htmlPlugin = (extra) => {
+//     const htmlFile = 
+//         new HtmlWebpackPlugin( {
+//             filename: extra + '.html',
+//             template: './src/' + extra + '.html',
+//             chunks: [extra]
+//         })
     
-    return htmlFile
-}
+//     return htmlFile
+// }
 
 module.exports = {
 
@@ -43,10 +43,10 @@ module.exports = {
         }),
 
         // htmlPlugin('index'),
-        htmlPlugin('skud'),
-        htmlPlugin('ops'),
-        htmlPlugin('tv'),
-        htmlPlugin('gsm'),
+        // htmlPlugin('skud'),
+        // htmlPlugin('ops'),
+        // htmlPlugin('tv'),
+        // htmlPlugin('gsm'),
         // new HtmlWebpackPlugin( {
         //     filename: 'gsm.html',
         //     template: './src/gsm.html',

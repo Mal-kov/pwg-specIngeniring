@@ -1,0 +1,52 @@
+/* ============================= кнопка вверх ============================== */
+
+.scrollToTop{
+    position: fixed;
+    padding: 0;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 4px;
+    display: none;
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    z-index: 1001;
+    color: #fff;
+    transition: all .5s;
+    color: $red;
+    border: 0;
+    cursor: pointer;
+}
+.scrollTopArrow{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.scrollTopArrow svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+}
+
+.scrollToTop:hover{
+    text-decoration: none;
+    outline: none;
+    border: 1px solid $red;
+    box-shadow: 0 2px 5px 3px rgba(0, 0, 0, .4);
+}
+
+@media(max-width:1025px){
+    .scrollToTop{
+        height: 40px;
+        width: 40px;
+    }
+}
+@media(max-width:481px){
+    .scrollToTop{
+        right: 30px;
+        height: 30px;
+        width: 30px;
+    }
+}

@@ -1,0 +1,279 @@
+.solution{
+    padding: 30px 0;
+    position: relative;
+    .solutionLittleRombs{
+        position: relative;
+        height: 510px;
+        .solutionLittleRombs_item{
+            width: 250px; 
+            height: 250px; 
+            background: $gradient;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            img{
+                width: 100%; 
+                height: 100%; 
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+        .rombItem1{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .rombItem2{
+            position: absolute;
+            left: 16px;
+            top: 127px;
+        }
+        .rombItem3{
+            position: absolute;
+            right: 16px;
+            top: 127px;
+        }
+        .rombItem4{
+            position: relative;
+            top: 255px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .solutionList{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        h4{
+            position: absolute;
+            left: 15%;
+            top: 150px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        ul{
+            position: absolute;
+            left: 20%;
+            top: 200px;
+            padding: 0;
+            li{
+                list-style: none;
+                padding-left: 30px;
+                position: relative;
+                background-repeat: no-repeat;
+                p{
+                    font-size: 24px;
+                    font-style: italic;
+                }
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    content: "";
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background: $red;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1025px){
+    .solution{
+        .solutionLittleRombs{
+            height: 450px;
+            .solutionLittleRombs_item{
+                width: 200px; 
+                height: 200px; 
+            }
+            .rombItem2{
+                left: 21px;
+                top: 103px;
+            }
+            .rombItem3{
+                right: 21px;
+                top: 103px;
+            }
+            .rombItem4{
+                top: 206px;
+            }
+        }
+        .solutionList{
+            h4{
+                top: 120px;
+            }
+            ul{
+                top: 170px; 
+            }
+        }
+    }
+}
+@media(max-width:860px){
+    .solution{
+        .solutionLittleRombs{
+            height: 400px;
+            .solutionLittleRombs_item{
+                width: 170px; 
+                height: 170px;
+            }
+            .rombItem2{
+                left: -8px;
+                top: 88px;
+            }
+            .rombItem3{
+                right: -8px;
+                top: 88px;
+            }
+            .rombItem4{
+                top: 176px;
+            }
+        }
+        .solutionList{
+            h4{
+                left: 10%;
+                top: 80px;
+                font-size: 24px;
+            }
+            ul{
+                top: 120px;
+                li{
+                    p{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:601px){
+    .solution{
+        .solutionLittleRombs{
+            height: 350px;
+            .rombItem2{
+                left: 81px;
+            }
+            .rombItem3{
+                right: 81px;
+            }
+        }
+        .solutionList{
+            height: 300px;
+    
+            h4{
+                top: 60px;
+            }
+            ul{
+                top: 100px;
+            }
+        }
+    }
+}
+@media(max-width:576px){
+    .solution{
+        .solutionLittleRombs{
+            .rombItem2{
+                left: 101px;
+            }
+            .rombItem3{
+                right: 101px;
+            }
+        }  
+    }
+}
+@media(max-width:481px){
+    .solution{
+        .solutionLittleRombs{
+            height: 300px;
+            .rombItem2{
+                left: 52px;
+            }
+            .rombItem3{
+                right: 52px;
+            }
+        }
+    }
+}
+@media(max-width:415px){
+    .solution{
+        .solutionLittleRombs{
+            .rombItem2{
+                left: 20px;
+            }
+            .rombItem3{
+                right: 20px;
+            }
+        }   
+    }
+}
+@media(max-width:380px){
+    .solution{
+        .solutionLittleRombs{
+            .rombItem2{
+                left: -1px;
+            }
+            .rombItem3{
+                right: -1px;
+            }
+        }
+        .solutionList{
+            ul{
+                left: 15%;
+                li{    
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:361px){
+    .solution{    
+        .solutionLittleRombs{
+            .rombItem2{
+                left: -7px;
+            }
+            .rombItem3{
+                right: -7px;
+            } 
+        }
+    }
+}
+@media(max-width:330px){
+    .solution{
+        .solutionLittleRombs{
+            height: 270px;
+           
+    
+            .solutionLittleRombs_item{
+                width: 140px; 
+                height: 140px;  
+            }
+            .rombItem2{
+                left: 2px;
+                top: 73px;
+            }
+            .rombItem3{
+                right: 2px;
+                top: 73px;
+            }
+            .rombItem4{
+                top: 146px;
+            }
+        }
+        .solutionList{
+            height: 250px;
+            h4{
+                left: 5%;
+                top: 30px;
+                font-size: 22px;
+            }
+            ul{
+                top: 70px;
+            }
+        }
+    }
+}
