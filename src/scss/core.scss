@@ -24,6 +24,12 @@ body {
 	height: 400px;
 }
 
+a{
+	&:visited{
+		color:$white
+	}
+}
+
 a.sI-btn{
 	font-size: 36px;
 	color: $white;
@@ -60,6 +66,7 @@ a.sI-btn{
 
 
 }
+
 
 // Заголовок каждой секции с полоской внизу
 .devider{
